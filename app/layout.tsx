@@ -35,7 +35,7 @@ export default function RootLayout({
       <body className="w-auto" suppressHydrationWarning>
         <header>
         <Banner>
-          <h1 className="text-4xl" >[Turn It Up Lessons...]</h1>
+          <h1 className="text-[8vh]" >[Turn It Up Lessons...]</h1>
         </Banner>
         <Navbar 
         navWrapper="flex flex-col items-center"

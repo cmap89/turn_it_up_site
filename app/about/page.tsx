@@ -10,7 +10,7 @@ export default function About() {
                 mainWrapperStyles="w-screen"
              >
                 <Banner bannerContainer="w-2/3" >
-                <Image className="w-full h-50 border-red-500 border-1" 
+                <Image className="w-full h-50" 
                 src="/pics/freestocks-photos-musician-2943109_1920.jpg" 
                 alt="Live music performance image"
                 width={1080}

@@ -14,8 +14,8 @@ export default function Home() {
             *Zoom lessons also available
             &quot;Developing people as musicians to comprehend and articulate music, awaken creativity, and be confident in their skill and knowledge of the guitar.&quot;
       </PageSection>
-      <PageSection customSectionStyles="bg-white">
-          <h2>Click here to sign up for Summer Sessions!</h2>
+      <PageSection customSectionStyles="bg-white text-background">
+          <h2 className="text-4xl" >Click here to sign up for Summer Sessions!</h2>
           [Images Here]
       </PageSection>
     </PageBody>

@@ -10,7 +10,7 @@ export default function PageSection ({
     children,
     customSectionStyles
 }: PageSectionProps) {
-    return <section className={cn("flex flex-col items-center justify-evenly w-full min-h-[40vh] gap-8", customSectionStyles)} >
+    return <section className={cn("flex flex-col items-center justify-evenly w-full gap-8", customSectionStyles)} >
         {children}
     </section>
 };
