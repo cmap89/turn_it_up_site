@@ -1,12 +1,23 @@
 'use client'
 
-import PageSection from "./components/PageSection.tsx"
+import PageBody from "./components/PageBody";
+import PageSection from "./components/PageSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-      </main>
-    </div>
+    <PageBody 
+    bodyWrapperStyles="bg-[url('/pics/kpereira52291-guitar-4087877.jpg')] bg-cover bg-center bg-no-repeat md:bg-fixed"
+    mainWrapperStyles="bg-white/0"
+     >
+      <PageSection customSectionStyles="text-white/100" >
+            <h2 className="text-5xl" >We Come To You!</h2>
+            *Zoom lessons also available
+            &quot;Developing people as musicians to comprehend and articulate music, awaken creativity, and be confident in their skill and knowledge of the guitar.&quot;
+      </PageSection>
+      <PageSection customSectionStyles="bg-white w-full">
+          <h2>Click here to sign up for Summer Sessions!</h2>
+          [Images Here]
+      </PageSection>
+    </PageBody>
   );
 }

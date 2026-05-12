@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-import Banner from "./components/Banner.tsx"
-import Navbar from "./components/Navbar.tsx"
-import Footer from "./components/Footer.tsx"
+import Banner from "./components/Banner";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 
 const geistSans = Geist({
@@ -32,21 +32,19 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="">
+      <body className="w-auto" suppressHydrationWarning>
         <header>
-        <Banner 
-        bannerContainer="flex flex-col items-center w-screen py-6 border-2 border-amber-900" 
-        bannerTitle="text-4xl"
-        />
+        <Banner>
+          <h1 className="text-4xl" >[Turn It Up Lessons...]</h1>
+        </Banner>
         <Navbar 
-        navWrapper="flex flex-col items-center"
+        navWrapper=" border-1 border-red-400 flex flex-col items-center"
         navList="flex gap-9 text-xl" 
-        navItem="" 
         />
       </header>
         {children}
         <Footer
-        footerWrapper=" border-1 border-black-400 flex flex-col items-center"
+        footerWrapper=" border-1 border-black-400 flex flex-col items-center gap-4 py-3"
         />
         </body>
     </html>

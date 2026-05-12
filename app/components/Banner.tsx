@@ -1,13 +1,19 @@
+import { ReactNode } from "react";
+import { cn } from "../lib/utils";
+
 interface BannerProps  {
-    bannerContainer: string,
-    bannerTitle: string,
+    bannerContainer?: string;
+    children?: ReactNode;    
 }
 
 export default function Banner({
     bannerContainer,
-    bannerTitle,
+    children,
 }: BannerProps) {
-    return <div className={bannerContainer}>
-        <h1 className={bannerTitle} >[Turn It Up Lessons...]</h1>
-    </div>
+    return <div className={cn(
+        "flex flex-col w-full items-center py-6 border-2 border-amber-900",
+        bannerContainer)}
+        >
+        {children}
+        </div>
 }
