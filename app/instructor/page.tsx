@@ -5,9 +5,14 @@ import PageBody from "../components/PageBody";
 import PageSection from "../components/PageSection";
 
 export default function Instructor() {
-    return <PageBody >
+    return <PageBody>
         <PageSection>
-            <Image className="border-1 border-red-200 w-16 h-16" src="" alt="Brian Rossy" ></Image>
+            <Image className="w-55 h-80" 
+            src="/pics/Brian.avif" 
+            alt="Brian Rossy"
+            width={1000}
+            height={1000}
+            />
         </PageSection>
         <PageSection>
             <h2>Brian David Rossy</h2>

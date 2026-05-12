@@ -6,17 +6,18 @@ import PageSection from "../components/PageSection";
 import Banner from "../components/Banner";
 
 export default function About() {
-    return <PageBody>
-                <Banner>
-                    <p>hello world</p>
-                <Image className="w-90 h-90 border-red-500 border-1" 
+    return <PageBody 
+                mainWrapperStyles="w-screen"
+             >
+                <Banner bannerContainer="w-2/3" >
+                <Image className="w-full h-50 border-red-500 border-1" 
                 src="/pics/freestocks-photos-musician-2943109_1920.jpg" 
                 alt="Live music performance image"
                 width={1080}
                 height={1080}
                  />
                 </Banner>
-            <PageSection>
+            <PageSection customSectionStyles="w-1/2 gap-5" >
                 <h3>Hello and welcome to Turn It Up Guitar Lessons!</h3>
                 <p>
                     We believe in offering the best in quality and satisfaction on your journey to learn guitar. We offer lessons in the convenience of your own home. Whether beginner or advanced we can help you get to the place you want to be!

@@ -14,10 +14,10 @@ export default function PageBody ({
 }: PageBodyProps) {
     return (
         <div className={cn(
-            "flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black",
+            "flex flex-col flex-1 items-center justify-center bg-background font-sans dark:bg-black",
             bodyWrapperStyles
             )}>
-            <main className={ cn("flex flex-1 w-full flex-col items-center justify-between px-2 py-32 bg-zinc-50 dark:bg-black sm:items-start",
+            <main className={ cn("flex flex-1 flex-col items-center w-1/2 justify-evenly px-2 py-32 bg-background dark:bg-black",
             mainWrapperStyles)
             }>
                 {children}

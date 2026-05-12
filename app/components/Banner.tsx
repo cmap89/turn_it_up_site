@@ -11,7 +11,7 @@ export default function Banner({
     children,
 }: BannerProps) {
     return <div className={cn(
-        "flex flex-col w-full items-center py-6 border-2 border-amber-900",
+        "flex flex-col w-full items-center py-6",
         bannerContainer)}
         >
         {children}

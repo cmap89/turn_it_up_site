@@ -38,13 +38,13 @@ export default function RootLayout({
           <h1 className="text-4xl" >[Turn It Up Lessons...]</h1>
         </Banner>
         <Navbar 
-        navWrapper=" border-1 border-red-400 flex flex-col items-center"
+        navWrapper="flex flex-col items-center"
         navList="flex gap-9 text-xl" 
         />
       </header>
         {children}
         <Footer
-        footerWrapper=" border-1 border-black-400 flex flex-col items-center gap-4 py-3"
+        footerWrapper="flex flex-col items-center gap-4 py-3"
         />
         </body>
     </html>
