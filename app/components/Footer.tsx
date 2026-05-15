@@ -1,17 +1,22 @@
-interface FooterProps {
-    footerWrapper: string,
+import SocialStrip from "./SocialStrip";
+import { CiLocationOn } from "react-icons/ci";
+import { MdEmail } from "react-icons/md";
+import { FaPhone } from "react-icons/fa";
 
-}
 
-export default function Footer ({
-    footerWrapper,
-}:FooterProps) {
-    return <footer className={footerWrapper} >
-        <div className="flex justify-evenly w-xl" >
+export default function Footer () {
+    return <footer className="flex flex-col items-center gap-4 py-3 " >
+        <div className="flex justify-evenly w-2/3" >
             <ul>
-                <li>Redding, CA</li>
-                <li>(945) 868-2935</li>
-                <li>[EMAIL HERE]</li>
+                <li>
+                    <CiLocationOn/> Redding, CA
+                </li>
+                <li>
+                    <FaPhone/> (945) 868-2935
+                </li>
+                <li>
+                    <MdEmail/> [EMAIL HERE]
+                </li>
             </ul>
             <div className="flex justify-around w-100" >
                 OPENING HOURS
@@ -21,6 +26,7 @@ export default function Footer ({
                 Saturday 10:00am-9:00pm
             <form action="">[FORM HERE]</form>
             </div>
+            <SocialStrip/>
         </div>
 
         <span> &copy; {`${new Date().getFullYear()}, Turn It Up Lessons`} </span>

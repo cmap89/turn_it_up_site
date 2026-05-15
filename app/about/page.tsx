@@ -7,7 +7,7 @@ import Banner from "../components/Banner";
 
 export default function About() {
     return <PageBody 
-                mainWrapperStyles="w-screen"
+                mainWrapperStyles="w-full"
              >
                 <Banner bannerContainer="w-2/3" >
                 <Image className="w-full h-50" 

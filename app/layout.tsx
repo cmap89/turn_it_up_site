@@ -32,20 +32,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="w-auto" suppressHydrationWarning>
+      <body className="flex flex-col w-auto min-h-screen" suppressHydrationWarning>
         <header>
         <Banner>
           <h1 className="text-[8vh]" >[Turn It Up Lessons...]</h1>
         </Banner>
-        <Navbar 
-        navWrapper="flex flex-col items-center"
-        navList="flex gap-9 text-xl" 
-        />
+        <Navbar/>
       </header>
         {children}
-        <Footer
-        footerWrapper="flex flex-col items-center gap-4 py-3"
-        />
+        <Footer/>
         </body>
     </html>
   );
