@@ -2,16 +2,16 @@
 
 import PageBody from "./components/PageBody";
 import PageSection from "./components/PageSection";
-import { getAssetPath } from "./lib/utils";
+// import { getAssetPath } from "./lib/utils";
 
 export default function Home() {
-  const bgImg = getAssetPath("/pics/kpereira52291-guitar-4087877.jpg");
+  // const bgImg = getAssetPath("/pics/kpereira52291-guitar-4087877.jpg");
   return (
     <>
-    <div className={`fixed inset-0 -z-10  bg-cover bg-center bg-no-repeat h-screen`}
+    {/* <div className={`fixed inset-0 -z-10  bg-cover bg-center bg-no-repeat h-screen`}
     style={{ backgroundImage:`url(${bgImg})`}}
     aria-hidden="true" >
-    </div>
+    </div> */}
 
     <PageBody 
     bodyWrapperStyles="bg-transparent"

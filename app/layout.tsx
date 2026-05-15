@@ -34,9 +34,6 @@ export default function RootLayout({
     >
       <body className="flex flex-col w-auto min-h-screen" suppressHydrationWarning>
         <header>
-        <Banner>
-          <h1 className="text-[8vh]" >[Turn It Up Lessons...]</h1>
-        </Banner>
         <Navbar/>
       </header>
         {children}

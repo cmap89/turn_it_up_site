@@ -20,4 +20,10 @@ export const navItems: navItem[] = [
         name:'Instructor',
         route:'instructor',
     },
+    {
+        id:4,
+        name:'Rock Band',
+        route:'rock_band',
+
+    },
 ];

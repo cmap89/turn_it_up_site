@@ -5,8 +5,8 @@ import { FaPhone } from "react-icons/fa";
 
 
 export default function Footer () {
-    return <footer className="flex flex-col items-center gap-4 py-3 " >
-        <div className="flex justify-evenly w-2/3" >
+    return <footer className="flex flex-col items-center gap-4 pb-3 pt-8" >
+        <div className="flex justify-evenly w-5/6" >
             <ul>
                 <li>
                     <CiLocationOn/> Redding, CA
@@ -18,13 +18,12 @@ export default function Footer () {
                     <MdEmail/> [EMAIL HERE]
                 </li>
             </ul>
-            <div className="flex justify-around w-100" >
+            <div className="flex justify-around" >
                 OPENING HOURS
                 <br />
                 Monday-Friday 4:00pm-9:00pm
                 <br />
                 Saturday 10:00am-9:00pm
-            <form action="">[FORM HERE]</form>
             </div>
             <SocialStrip/>
         </div>

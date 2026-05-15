@@ -4,11 +4,12 @@ import Link from "next/link.js";
 import { navItems, navItem } from "../data/navItems";
 
 export default function Navbar () {
-    return <nav className="flex flex-col items-center bg-transparent" >
-        <ul className="flex gap-9 justify-evenly w-1/2 text-xl" >
+    return <nav className="flex justify-between items-center bg-transparent px-5 min-h-[12vh]" >
+        <div> <Link href="/" >[TIUL LOGO]</Link></div>
+        <ul className="flex gap-6 justify-evenly text-xl" >
                 {
                 navItems.map((item: navItem) => (
-                    <li className="hover:text-amber-50 hover:-translate-y-1" key={item.id} > 
+                    <li className="hover:text-white" key={item.id} > 
                         <Link href={`/${item.route}`} > 
                             {item.name} 
                         </Link>
