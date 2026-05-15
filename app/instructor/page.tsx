@@ -3,12 +3,13 @@
 import Image from "next/image";
 import PageBody from "../components/PageBody";
 import PageSection from "../components/PageSection";
+import { getAssetPath } from "../lib/utils";
 
 export default function Instructor() {
     return <PageBody>
         <PageSection>
             <Image className="w-55 h-80" 
-            src="/pics/Brian.avif" 
+            src={getAssetPath("/pics/Brian.avif")}
             alt="Brian Rossy"
             width={1000}
             height={1000}

@@ -4,6 +4,7 @@ import Image from "next/image";
 import PageBody from "../components/PageBody";
 import PageSection from "../components/PageSection";
 import Banner from "../components/Banner";
+import { getAssetPath } from "../lib/utils";
 
 export default function About() {
     return <PageBody 
@@ -11,7 +12,7 @@ export default function About() {
              >
                 <Banner bannerContainer="w-2/3" >
                 <Image className="w-full h-50" 
-                src="/pics/freestocks-photos-musician-2943109_1920.jpg" 
+                src={getAssetPath(`/pics/freestocks-photos-musician-2943109_1920.jpg`)} 
                 alt="Live music performance image"
                 width={1080}
                 height={1080}
